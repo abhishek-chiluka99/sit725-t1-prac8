@@ -11,4 +11,8 @@ route.get('/api/cats', (req, res) => {
     controller.getAllCats(req,res)
 });
 
+route.delete('/api/cats', (req,res) => {
+    controller.deleteCat(req,res);
+});
+
 module.exports = route;
